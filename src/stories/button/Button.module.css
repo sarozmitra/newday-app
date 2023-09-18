@@ -1,0 +1,37 @@
+@import '../../styles.css';
+
+.Button {
+  border-radius: var(--rounded-5xl);
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.primary {
+  color: var(--white);
+  background-color:var(--primary-color);
+  border: none;
+  &:hover{
+    background-color:var(--black);
+  }
+}
+.secondary {
+  color: var(--black);
+  background-color: transparent;
+  border: var(--border) solid var(--black);
+  &:hover{
+    border-color:var(--primary-color);
+    color:var(--primary-color);
+  }
+}
+.small {
+  font-size: var(--xs-size);
+  padding: var(--xxs-size) var(--m-size);
+}
+.medium {
+  font-size: var(--s-size);
+  padding: var(--xxs-size) 20px;
+}
+.large {
+  font-size: var(--m-size);
+  padding: var(--xs-size) 24px;
+}

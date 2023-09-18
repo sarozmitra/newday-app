@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {    
+   /* 1 rem = 10px; 10px/16px = 62.5% */
+  font-size: 62.5%; 
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* css design tokens */
+:root {
+  /* Colours */
+  --blue: #6b4ef9;
+  --white: #ffffff;
+  --black: #000000;
+
+  --primary-color: var(--blue);
+  --secondary-color: #6C757D;
+  --background-color: #FFFFFF;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  
+  /* Font-size */
+  /* Spacing / Size */
+  --xxs-size: 1.0rem; /* 10px */
+  --xs-size: 1.2rem; /* 12px */
+  --s-size: 1.4rem; /* 14px */
+  --m-size: 1.6rem; /* 16px */
+  --2m-size: 2.0rem; /* 20px */
+  --l-size: 2.6rem; /* 26px */
+
+  --spacing-unit: 1.6rem; /* 16px */
+  --font-family: "Roobert",sans-serif;
+
+  /* Border */
+  --border: 0.3rem; /* 3px */
+
+  /* Border Radious */
+  --rounded-none: 0px;
+  --rounded-s: 0.4rem; /* 4px */
+  --rounded-5xl: 5.0rem; /* 50px */
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--m-size);
+  max-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: var(--l-size);
+}

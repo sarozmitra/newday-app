@@ -1,0 +1,35 @@
+@import '../../styles.css';
+
+.Typography {
+  font-family: var(--font-family);
+  padding: var(--m-size);
+  line-height: var(--2m-size);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.no-gutter {
+  margin: 0;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.body-small {
+  font-size: var(--xs-size);
+}

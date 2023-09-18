@@ -1,0 +1,69 @@
+@import '../../styles.css';
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+.modalContent {
+  background-color: var(--white);
+  padding: var(--2m-size);
+  border-radius: var(--rounded-s);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Ensure modal doesn't go off-screen */
+  max-height: 90%;
+  overflow-y: auto; /* Scroll if content is too long */
+  position: relative; /* Relative positioning for the close button */
+}
+
+/* Modal Sizes */
+.small {
+  width: 300px;
+  max-width: 90%;
+}
+
+.large {
+  width: 600px;
+  max-width: 90%;
+}
+
+.x-large {
+  width: 800px;
+  max-width: 90%;
+}
+
+.adaptive {
+  width: auto;
+  max-width: 90%;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: var(--2m-size);
+  cursor: pointer;
+  color: var(--black);
+}
+
+.closeButton:hover {
+  color: var( --secondary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .large,
+  .x-large {
+    width: 90%;
+  }
+}
