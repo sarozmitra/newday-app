@@ -10,4 +10,15 @@ describe('App Component', () => {
       expect(screen.getByText(/Helping people move forward with credit/i)).toBeInTheDocument();
     });
   });
+
+  it('closes the modal when "Close" button is clicked', async () => {
+    render(<App />);
+    const openModalButton = screen.getByRole('button', { name: /Open Modal/i });
+    fireEvent.click(openModalButton);
+    const closeButton = screen.getByRole('button', { name: /Close modal/i });
+    fireEvent.click(closeButton);
+    await waitFor(() => {
+      expect(screen.queryByText(/Helping people move forward with credit/i)).not.toBeInTheDocument();
+    });
+  });
 });
