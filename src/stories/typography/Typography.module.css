@@ -10,7 +10,7 @@
   text-decoration: line-through;
 }
 
-.no-gutter {
+.noGutter {
   margin: 0;
 }
 
@@ -30,6 +30,6 @@
   text-align: justify;
 }
 
-.body-small {
+.bodySmall {
   font-size: var(--xs-size);
 }

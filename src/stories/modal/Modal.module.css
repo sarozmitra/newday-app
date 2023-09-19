@@ -47,8 +47,8 @@
 /* Close Button */
 .closeButton {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: var(--xxs-size);
+  right: var(--xxs-size);
   background-color: transparent;
   border: none;
   font-size: var(--2m-size);
@@ -57,7 +57,7 @@
 }
 
 .closeButton:hover {
-  color: var( --secondary-color);
+  color: var(--secondary-color);
 }
 
 /* Responsive Adjustments */

@@ -29,9 +29,9 @@
 }
 .medium {
   font-size: var(--s-size);
-  padding: var(--xxs-size) 20px;
+  padding: var(--xxs-size) var(--2m-size);
 }
 .large {
   font-size: var(--m-size);
-  padding: var(--xs-size) 24px;
+  padding: var(--xs-size) var(--l-size);
 }

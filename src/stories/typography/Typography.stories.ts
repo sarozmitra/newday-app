@@ -44,7 +44,7 @@ export const Paragraph: Story = {
 
 export const Span: Story = {
   args: {
-    className:'body-small',
+    className:'bodySmall',
     variant:'span',
     children:'Span',
   }
@@ -52,7 +52,7 @@ export const Span: Story = {
 
 export const BodyTextSmall: Story = {
   args: {
-    className:'body-small',
+    className:'bodySmall',
     children:'Body text small',
   }
 };

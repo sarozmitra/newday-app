@@ -41,6 +41,7 @@ export const Typography: React.FC<TypographyProps> = ({
   const classNames = clsx([className], {
     [style.Typography]: true,
     [style.noGutter]: noGutter,
+    [style.bodySmall]: className === 'bodySmall',
     [style.left]: align === 'left',
     [style.right]: align === 'right',
     [style.center]: align === 'center',
